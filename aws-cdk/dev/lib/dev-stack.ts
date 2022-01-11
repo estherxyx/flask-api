@@ -17,7 +17,7 @@ export class DevStack extends Stack {
 
     const table = new dynamodb.Table(this, id, {
       tableName: "Movies",
-      billingMode: dynamodb.BillingMode.PROVISI ONED,
+      billingMode: dynamodb.BillingMode.PROVISIONED,
       readCapacity: 1,
       writeCapacity: 1,
       removalPolicy: cdk.RemovalPolicy.DESTROY,
